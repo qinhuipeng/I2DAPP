@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Dimensions, View } from 'react-native';
+import { AppRegistry£¬Text, Dimensions, View } from 'react-native';
 import Header from './rnApp/include/header';
 import RegisterTab from './rnApp/account/registerTab';
 import Login from './rnApp/account/login';
