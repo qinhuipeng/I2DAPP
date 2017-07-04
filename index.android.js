@@ -1,60 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import React, { Component } from 'react';
+import { AppRegistry, Dimensions, View } from 'react-native';
+import Header from './rnApp/include/header';
+import RegisterTab from './rnApp/account/registerTab';
+import Login from './rnApp/account/login';
+import rootApp from './rnApp/rootApp';
+import navigator from './rnApp/navigator';
 
-import React, {Component} from 'react';
-import {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    Image,
-    NativeModules,
-    View
-} from 'react-native';
+var width= Dimensions.get('window').width;
+var height= Dimensions.get('window').height;
 
-export default class I2DAPP_RN extends Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome} onPress={this.showMsg.bind(this)}>
-                    点我试试
-                </Text>
-                {/*<Text style={styles.instructions}>*/}
-                {/*To get started, edit index.android.js*/}
-                {/*</Text>*/}
-                {/*<Text style={styles.instructions}>*/}
-                {/*Double tap R on your keyboard to reload,{'\n'}*/}
-                {/*Shake or press menu button for dev menu*/}
-                {/*</Text>*/}
-                {/*<Image source=""/>*/}
-            </View>
-        );
-    }
-
-    showMsg() {
-        NativeModules.Test.showMsg();
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});
-
-AppRegistry.registerComponent('I2DAPP_RN', () => I2DAPP_RN);
+AppRegistry.registerComponent('I2DAPP_RN', () => navigator);
