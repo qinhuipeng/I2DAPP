@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "E:/AndroidStudioProjects/I2DAPP/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"D:\\Androidsdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build E:\\AndroidStudioProjects\\I2DAPP\\app\\.externalNativeBuild\\cmake\\debug\\armeabi --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "native-lib",
+			"buildCommand" : "D:\\Androidsdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build E:\\AndroidStudioProjects\\I2DAPP\\app\\.externalNativeBuild\\cmake\\debug\\armeabi --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=D:/Androidsdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Androidsdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem D:\\Androidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Androidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi\\include -isystem D:\\Androidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Androidsdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/AndroidStudioProjects/I2DAPP/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "E:/AndroidStudioProjects/I2DAPP/app/.externalNativeBuild/cmake/debug/armeabi"
+				}
+			],
+			"output" : "E:/AndroidStudioProjects/I2DAPP/app/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so",
+			"toolchain" : "1879248265"
+		}
+	},
+	"toolchains" : 
+	{
+		"1879248265" : 
+		{
+			"cCompilerExecutable" : "D:/Androidsdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/Androidsdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
