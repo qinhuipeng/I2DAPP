@@ -76,9 +76,9 @@ export default class extends Component {
 
         this.state={
             banner:[
-                require('../../images/slider/1.jpg'),
-                require('../../images/slider/2.jpg'),
-                require('../../images/slider/3.jpg')
+                require('../imgs/slider/1.jpg'),
+                require('../imgs/slider/2.jpg'),
+                require('../imgs/slider/3.jpg'),
         ]}
         this._enters = this._enters.bind(this);
 
